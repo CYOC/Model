@@ -1,5 +1,5 @@
 export interface Row {
-	/** The typ of row. */
+	/** The type of row. */
 	type: string;
 	/**
 	 * A unique name for this row among it's sibling rows

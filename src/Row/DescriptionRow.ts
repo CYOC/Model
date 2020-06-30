@@ -1,9 +1,9 @@
-import { Row } from "./";
+import { IRow } from "./IRow";
 import { ImageURI, RelativePosition } from "../";
 
 const typeId = "DescriptionRow";
 
-export interface DescriptionRow extends Row {
+export interface DescriptionRow extends IRow {
 	type: typeof typeId;
 
 	/** An optional image. */
@@ -20,6 +20,6 @@ export interface DescriptionRow extends Row {
 	text: string;
 }
 
-export function isDescriptionRow(row: Row): row is DescriptionRow {
+export function isDescriptionRow(row: IRow): row is DescriptionRow {
 	return row.type === typeId;
 }

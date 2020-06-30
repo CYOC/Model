@@ -1,4 +1,4 @@
-export interface Row {
+export interface IRow {
 	/** The type of row. */
 	type: string;
 	/**

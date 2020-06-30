@@ -1,8 +1,8 @@
-import { Row } from "./";
+import { IRow } from "./IRow";
 
 const typeId = "HeadingRow";
 
-export interface HeadingRow extends Row {
+export interface HeadingRow extends IRow {
 	type: typeof typeId;
 	/** The text content of the heading. */
 	text: string;
@@ -10,6 +10,6 @@ export interface HeadingRow extends Row {
 	level: number;
 }
 
-export function isHeadingRow(row: Row): row is HeadingRow {
+export function isHeadingRow(row: IRow): row is HeadingRow {
 	return row.type === typeId;
 }

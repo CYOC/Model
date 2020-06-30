@@ -1,6 +1,6 @@
 {
 	"name": "@cyoc/model",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "The basic model of CYOC",
 	"author": "Silic1",
 	"main": "lib/index.js",
@@ -10,9 +10,11 @@
 		"registry": "https://npm.pkg.github.com/"
 	},
 	"scripts": {
-		"prepack": "tsc"
+		"prepack": "tsc && npm run schema",
+		"schema": "typescript-json-schema tsconfig.json Project --out schema.json --required"
 	},
 	"devDependencies": {
-		"typescript": "^3.9.5"
+		"typescript": "^3.9.5",
+		"typescript-json-schema": "^0.42.0"
 	}
 }

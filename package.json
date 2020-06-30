@@ -11,7 +11,7 @@
 	},
 	"scripts": {
 		"prepack": "tsc && npm run schema",
-		"schema": "typescript-json-schema tsconfig.json Project --out schema.json"
+		"schema": "typescript-json-schema tsconfig.json Project --out schema.json --required"
 	},
 	"devDependencies": {
 		"typescript": "^3.9.5",

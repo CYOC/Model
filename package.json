@@ -10,9 +10,11 @@
 		"registry": "https://npm.pkg.github.com/"
 	},
 	"scripts": {
-		"prepack": "tsc"
+		"prepack": "tsc && npm run schema",
+		"schema": "typescript-json-schema tsconfig.json Project --out schema.json"
 	},
 	"devDependencies": {
-		"typescript": "^3.9.5"
+		"typescript": "^3.9.5",
+		"typescript-json-schema": "^0.42.0"
 	}
 }
